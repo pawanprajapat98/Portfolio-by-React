@@ -1,0 +1,455 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Robto",sans-serif;
+}
+
+.Header {
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.Header ul li {
+    list-style: none;
+}
+
+.Header ul li a {
+    color: rgb(255, 253, 253);
+    display: inline-block;
+    padding: 1.5rem;
+    font-size: 25px;
+}
+
+.main-box .container .pic img {
+    width: 300px;
+    height:400px;
+    margin-top:10%;
+    margin-left:180px;
+    box-shadow: -11px 13px white;
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+
+.Detail {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+   
+}
+
+.Detail h1,.Detail p {
+    border-left: 5px solid;
+
+}
+
+.Detail h1,p {
+    margin-left: 40px;
+    padding: 10px;
+    color: rgb(32, 29, 27);
+    font-weight:400;
+}
+
+button {
+    margin: 15px;
+    padding: 10px 10px;
+    width: 180px;
+    height: 45px;
+    background-color: white;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: black;
+    color: rgb(254, 253, 250);
+}
+
+.main-box {
+    width: 480px;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    /* justify-content:55; */
+    align-items: center;
+}
+
+
+/* About section css........................................................  */
+.About-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+    background-color:#E0E0E0;
+}
+.About-box{
+    width:70%;
+    background-color:#E0E0E0;
+    height:400px;
+    /* border: 1px solid black; */
+    margin-left:100px;
+    display: flex;
+    padding:10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94,104,121, .288);
+    border-radius:10px;
+    text-align:center;
+}
+.About-box h1{
+    font-size:35px;
+    font-weight:700;
+}
+/* Code section .............................................  */
+.Code-cont{
+  width:100%;
+  padding-top:20px;
+}
+.Code-heading h1{
+    font-size:45px;
+    font-weight:bolder;
+    margin-left:40px;
+    text-align: center;
+
+}
+.Skill-cont{
+    display: flex;
+    
+}
+.Skill-cont .Skill-box{
+  
+    margin-left:150px;
+    border-radius:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+.Skill-cont .Skill-box img{
+   
+    width:350px;
+    height:250px;
+    
+}
+.Skill-cont h1{
+    font-size:27px;
+    margin-right:40px;
+   
+}
+/* Bag section .............................................  */
+.Bag-heading h1{
+    font-size:38px;
+    margin-left:100px;
+    padding:40px 0 0 40px;
+    font-weight:700;
+}
+
+.Bagcomp1-cont{
+    display:flex;
+    justify-content: center;
+}
+.Bagcomp1-box{
+    display: flex;
+    width:100%;
+    justify-content:space-evenly;
+    margin:0 0  0 100px;
+    padding:40px 40px 0 40px;
+}
+.Bagcomp1-box .comp1date p{
+    width:200px;
+    text-align: center;
+}
+.Bagcomp1-box .comp1pera{
+    width:800px;
+    margin:0 30px;
+    text-align:start;
+
+    padding:0px 30px 0 0;
+}
+.Bagcomp1-box ul li{
+    list-style: none;
+    padding:5px;
+    line-height:1.3;
+}
+.Bagcomp1-box .comp1pera h1,h2{
+  padding-bottom:10px;
+  color: rgb(32, 29, 27);
+  font-weight:400;   
+}
+
+/* componemt2...........................................................  */
+.Bagcomp2-cont{
+    display:flex;
+    justify-content: center;
+}
+.Bagcomp2-box{
+    display: flex;
+    width:100%;
+    justify-content:space-evenly;
+    margin:0 0  0 100px;
+    padding:40px 40px 0 40px;
+}
+.Bagcomp2-box .comp2date p{
+    width:200px;
+    text-align: center;
+}
+.Bagcomp2-box .comp2pera{
+    width:800px;
+    margin:0 30px;
+    text-align:start;
+    padding:0px 30px 0 0;
+}
+.Bagcomp2-box ul li{
+    list-style: none;
+    padding:5px;
+    line-height:1.3;
+}
+.Bagcomp2-box .comp2pera h1,h2{
+  padding-bottom:10px;
+  color: rgb(32, 29, 27);
+  font-weight:400;   
+}
+/* componemt3...........................................................  */
+.Bagcomp3-cont{
+    display:flex;
+    justify-content: center;
+    /* padding: ; */
+}
+.Bagcomp3-box{
+    display: flex;
+    width:100%;
+    justify-content:space-evenly;
+    margin:0 0  0 100px;
+    padding:40px 40px 80px 40px;
+}
+.Bagcomp3-box .comp3date p{
+    width:200px;
+    text-align: center;
+}
+.Bagcomp3-box .comp3pera{
+    width:800px;
+    margin:0 30px;
+    text-align:start;
+    padding:0px 30px 0 0;
+}
+.Bagcomp3-box ul li{
+    list-style: none;
+    padding:5px;
+    line-height:1.3;
+}
+.Bagcomp3-box .comp3pera h1,h2{
+  padding-bottom:10px; 
+  /* margin-left: 40px; */
+  /* padding: 10px; */
+  color: rgb(32, 29, 27);
+  font-weight:400; 
+}
+/* Graduation...............................................................  */
+.ul-list ul{
+   margin-left:100px; 
+   padding:40px 0 0 40px; 
+   display: flex;
+  
+}
+.ul-list ul li{
+    list-style:none;
+    /* padding:10px 40px; */
+    border:1px solid black;
+}
+.ul-list ul li a{
+    display: inline-block;
+    text-decoration:none;
+    padding:14px 60px;
+    color:black
+}
+.ul-list ul li a:hover{
+    background-color: black;
+    color:white;
+}
+/* Educat component...................................................................  */
+
+.Educat-cont{
+    display:flex;
+    justify-content: center;
+}
+.Educat-box{
+    display: flex;
+    width:100%;
+    justify-content:space-evenly;
+    margin:0 0  0 100px;
+    padding:40px 40px 0 40px;
+}
+.Educat-box .Date-box p{
+    width:200px;
+    text-align: center;
+}
+.Educat-box .Detail-box{
+    width:800px;
+    margin:0 30px;
+    text-align:start;
+    padding:0px 30px 0 0;
+}
+.Educat-box ul li{
+    list-style: none;
+    padding:5px;
+    line-height:1.3;
+}
+.Educat-box .Detail-box h1,h2{
+  padding-bottom:10px;
+  color: rgb(32, 29, 27);
+  font-weight:400;   
+}
+.active{
+    background-color:blue ;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* portfolio........................................................    */
+.portfolio-cont{
+    width:100%;
+    height:100vh;
+}
+
+.portfolio-heading h1{
+    font-size:38px;
+    margin-left:100px;
+    padding:40px 0 0 40px;
+    font-weight:700;
+}
+.port-cop-box{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items:start;
+    margin-left:100px;
+    margin-top:50px;
+    
+}
+
+.port-box{
+    width:430px;
+    height:280px;
+    border:1px solid silver;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    border-radius:10px;
+    margin:0 10px;
+    background-position: top;
+    transition:ease-in-out 2s;
+
+}
+.port-box:hover{
+    background-position:bottom;
+}
+.port-box{
+    background-image:url(/public/port.png);
+    /* background-position: center; */
+    background-size:cover;
+    
+}
+/* contect............................................................  */
+.Contect-cont{
+    width:100%;
+    height:100vh;
+}
+.contect-heading{
+    font-size:25px;
+    margin-left:100px;
+    padding:40px 0 0 40px;
+    font-weight:700;
+    text-align: center;
+    text-transform: uppercase;
+     font-weight:100;
+}
+.import-component{
+    display:flex;
+    justify-content: center;
+   
+}
+.Input-copy-1{
+    width:900px;
+    padding:15px;
+    border-radius:5px;
+    margin-bottom:30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:none;
+}
+.Input-small{
+    width:440px;
+    padding:15px;
+    border-radius:5px;
+    margin-bottom:30px;
+    border:none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+.form{
+    width:1000px;
+    margin-top:10px;
+    /* border:1px solid black; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding:20px;
+    margin-left:100px;
+    border-radius:10px;
+   
+}
+form{
+    text-align: center;
+    padding-top:15px;
+}
+#Input-msg{
+    width:900px;
+    height:160px;
+    margin-bottom:30px;
+    border-radius:10px;
+    border:none;
+    padding:15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* text-align:top; */
+}
+.btn-submit{
+    width:900px;
+    text-align: center;
+}
+.btn-submit button{
+    background-color: blue;
+    color:white;
+    border: none;
+    border-radius:5px;
+}
+#Input-sm-left{
+    margin-right:26px;
+}
+input{
+    font-size:20px;
+}
+textarea{
+    font-size:20px; 
+}
+
+  
+  

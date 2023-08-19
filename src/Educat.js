@@ -1,10 +1,10 @@
 import React from 'react'
-import Graduation from './Graduation'
+// import Graduation from './Graduation'
 import EducatComp from './EducatComp'
 function Educat() {
   return (
     <div>
-      <Graduation/>
+     
       <div className='Educat-cont'>
               <div className='Educat-box'>
                    <div className='Date-box'>

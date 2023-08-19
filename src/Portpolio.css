@@ -28,7 +28,7 @@
 }
 
 .main-box .container .pic img {
-    width: 300px;
+    width: 320px;
     height:400px;
     margin-top:10%;
     margin-left:180px;
@@ -50,6 +50,7 @@
     font-size: 30px;
     text-align: center;
     margin-top: 60px;
+    margin-left:50px;
    
 }
 
@@ -60,21 +61,31 @@
 
 .Detail h1,p {
     margin-left: 40px;
-    padding: 10px;
+    padding: 10px 10px 10px 40px;
     color: rgb(32, 29, 27);
     font-weight:400;
 }
 
-button {
+.Resume,.Hire {
+    display: inline-block;
     margin: 15px;
-    padding: 10px 10px;
+    padding: 15px 10px;
     width: 180px;
     height: 45px;
     background-color: white;
     font-size: 18px;
+    border:1px solid black;
+}
+.Detail a{
+    text-decoration:none;
+    color:black;
+}
+.Detail a:hover{
+    
+    color:white;
 }
 
-button:hover {
+.Resume:hover,.Hire:hover{
     background-color: black;
     color: rgb(254, 253, 250);
 }
@@ -171,7 +182,7 @@ button:hover {
     padding:40px 40px 0 40px;
 }
 .Bagcomp1-box .comp1date p{
-    width:200px;
+    width:300px !important;
     text-align: center;
 }
 .Bagcomp1-box .comp1pera{
@@ -192,73 +203,6 @@ button:hover {
   font-weight:400;   
 }
 
-/* componemt2...........................................................  */
-.Bagcomp2-cont{
-    display:flex;
-    justify-content: center;
-}
-.Bagcomp2-box{
-    display: flex;
-    width:100%;
-    justify-content:space-evenly;
-    margin:0 0  0 100px;
-    padding:40px 40px 0 40px;
-}
-.Bagcomp2-box .comp2date p{
-    width:200px;
-    text-align: center;
-}
-.Bagcomp2-box .comp2pera{
-    width:800px;
-    margin:0 30px;
-    text-align:start;
-    padding:0px 30px 0 0;
-}
-.Bagcomp2-box ul li{
-    list-style: none;
-    padding:5px;
-    line-height:1.3;
-}
-.Bagcomp2-box .comp2pera h1,h2{
-  padding-bottom:10px;
-  color: rgb(32, 29, 27);
-  font-weight:400;   
-}
-/* componemt3...........................................................  */
-.Bagcomp3-cont{
-    display:flex;
-    justify-content: center;
-    /* padding: ; */
-}
-.Bagcomp3-box{
-    display: flex;
-    width:100%;
-    justify-content:space-evenly;
-    margin:0 0  0 100px;
-    padding:40px 40px 80px 40px;
-}
-.Bagcomp3-box .comp3date p{
-    width:200px;
-    text-align: center;
-}
-.Bagcomp3-box .comp3pera{
-    width:800px;
-    margin:0 30px;
-    text-align:start;
-    padding:0px 30px 0 0;
-}
-.Bagcomp3-box ul li{
-    list-style: none;
-    padding:5px;
-    line-height:1.3;
-}
-.Bagcomp3-box .comp3pera h1,h2{
-  padding-bottom:10px; 
-  /* margin-left: 40px; */
-  /* padding: 10px; */
-  color: rgb(32, 29, 27);
-  font-weight:400; 
-}
 /* Graduation...............................................................  */
 .ul-list ul{
    margin-left:100px; 
@@ -277,10 +221,18 @@ button:hover {
     padding:14px 60px;
     color:black
 }
-.ul-list ul li a:hover{
+.ul-list .btn-1:focus,.ul-list .btn-2:focus{
+      color:white !important;
+      background-color:black !important;
+}
+/* .ul-list ul li a:hover{
     background-color: black;
     color:white;
-}
+} */
+/* .ul-list ul li a:focus{
+    background-color: black;
+    color:white;
+} */
 /* Educat component...................................................................  */
 
 .Educat-cont{
@@ -295,7 +247,7 @@ button:hover {
     padding:40px 40px 0 40px;
 }
 .Educat-box .Date-box p{
-    width:200px;
+    width:300px;
     text-align: center;
 }
 .Educat-box .Detail-box{
@@ -314,9 +266,7 @@ button:hover {
   color: rgb(32, 29, 27);
   font-weight:400;   
 }
-.active{
-    background-color:blue ;
-}
+
 
 
 
@@ -351,26 +301,24 @@ button:hover {
 }
 
 .port-box{
-    width:430px;
+    width:350px;
     height:280px;
     border:1px solid silver;
     overflow-x: hidden;
-    /* overflow-y: scroll; */
     border-radius:10px;
-    margin:0 10px;
+    margin:20px 10px;
     background-position: top;
     transition:ease-in-out 2s;
+    
+    background-image:url(/public/port.png);
+    /* background-position: center; */
+    background-size:cover;
 
 }
 .port-box:hover{
     background-position:bottom;
 }
-.port-box{
-    background-image:url(/public/port.png);
-    /* background-position: center; */
-    background-size:cover;
-    
-}
+
 /* contect............................................................  */
 .Contect-cont{
     width:100%;
@@ -391,7 +339,7 @@ button:hover {
    
 }
 .Input-copy-1{
-    width:900px;
+    width:100%;
     padding:15px;
     border-radius:5px;
     margin-bottom:30px;
@@ -399,7 +347,7 @@ button:hover {
     border:none;
 }
 .Input-small{
-    width:440px;
+    width:48%;
     padding:15px;
     border-radius:5px;
     margin-bottom:30px;
@@ -422,7 +370,7 @@ form{
     padding-top:15px;
 }
 #Input-msg{
-    width:900px;
+    width:100%;
     height:160px;
     margin-bottom:30px;
     border-radius:10px;
@@ -432,7 +380,7 @@ form{
     /* text-align:top; */
 }
 .btn-submit{
-    width:900px;
+    width:100%;
     text-align: center;
 }
 .btn-submit button{
@@ -440,6 +388,8 @@ form{
     color:white;
     border: none;
     border-radius:5px;
+    padding:15px 40px;
+    font-size:20px;
 }
 #Input-sm-left{
     margin-right:26px;
@@ -449,7 +399,194 @@ input{
 }
 textarea{
     font-size:20px; 
+    width:100%;
+}
+/* portfolio section mediya q............................................  */
+@media all and (max-width:1024px){
+    .port-box{
+        width:250px;
+        height:200px;
+        border-radius:10px;
+        margin:20px 10px;
+        
+    
+    }
+}
+@media all and (max-width:705px){
+    .port-box{
+        
+        margin:10px 30px;
+    }
+    .portfolio-heading h1{
+        font-size: 30px;
+        margin-left: 80px !important;
+       
+        font-weight: 500;
+    }
+    .port-cop-box{
+        
+        margin-top:30px;
+        
+    }
+}
+    @media all and (max-width:425px){
+        .port-box{
+        
+            margin:10px 40px 10px 40px;
+        }
+        
+        .portfolio-heading h1{
+            font-size: 30px;
+            margin-left:100px !important;
+            font-weight: 500;
+        }
+        .port-cop-box{
+            
+            margin-top:30px;
+            
+        }
+}
+@media all and (max-width:375px){
+    .portfolio-heading h1{
+       
+        margin-left:120px;
+       
+    }
+}
+@media all and (max-width:320px){
+    .portfolio-heading h1{
+       
+        margin-left:90px;
+       
+    }
 }
 
+
+
+
+/* Contact section mediya q.........................................  */
+@media all and (max-width:1070px){
+    .Input-copy-1{
+        width:80%;
+        padding:7px;
+        font-size:20px;
+        margin-bottom:20px;
+    }
+    .form{
+        width:700px;
+        padding:7px;
+        font-size:20px;
+    }
+    #Input-msg{
+        width:80%;
+        height:160px;
+        font-size:20px;
+        margin-bottom:20px;
+    }
+    .Input-small{
+        width:39%;
+        padding:7px;
+        font-size:20px;
+        margin-bottom:20px;
+    }
+    #Input-sm-left{
+        margin-right:8px;
+    }
+
+}
+@media all and (max-width:850px){
+    .Input-copy-1{
+        width:70%;
+        padding:7px;
+        font-size:20px;
+    }
+    .form{
+        width:500px;
+        padding:7px;
+        font-size:20px;
+    }
+    #Input-msg{
+        width:70%;
+        height:160px;
+        font-size:20px;
+    }
+    .Input-small{
+        width:34%;
+        padding:7px;
+        font-size:20px;
+    }
+    #Input-sm-left{
+        margin-right:13px;
+    }
+
+}
+@media all and (max-width:640px){
+    .contect-heading{
+        font-size:14px !important;
+        font-weight:100 !important;
+        margin-left:30px !important;
+       
+       
+        
+    }
+   
+    .Input-copy-1{
+        width:100%;
+        padding:3.5px;
+        
+    }
+    .form{
+        width:70%;
+        height:100%;
+        padding:10px;
+        margin-right:30px;
+       
+    }
+    #Input-msg{
+        width:100%;
+        height:80px;
+       
+    }
+    .Input-small{
+        width:100%;
+        padding:3.5px;
+      
+    }
+    
+    #Input-sm-left{
+        margin-right:0;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btn-submit button{
+       
+        border-radius:5px;
+        padding:8px 15px;
+        font-size:16px;
+        
+    }
+    .contect-heading{
+        font-size:20px;
+    }
+    .Header{
+        width:70px;
+    }
+    input{
+        font-size:16px !important;
+    }
+    textarea{
+        font-size:16px !important; 
+        
+    }
+    .btn-submit button{
+       
+        border-radius:5px;
+        padding:8px 10px !important;
+        font-size:18px !important;
+    }
+}
   
   

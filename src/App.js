@@ -24,11 +24,14 @@ function App() {
            <Route path="/about" element={<About/>}></Route>
            <Route path="/Code" element={<Code/>}></Route>
            <Route path="/Bag" element={<Bag/>}></Route>
-           <Route path="/Graduation" element={<Graduation/>}></Route>
            <Route path="/Portpoliyo" element={<Portpoliyo/>}></Route>
            <Route path="/Contect" element={<Contect/>}></Route>
-           <Route path="/Educat" element={<Educat/>}></Route>
-           <Route path="/Inturnship" element={<Inturnship/>}></Route>
+
+           <Route path="/Graduation" element={<Graduation/>}>
+                  <Route path="/Graduation" element={<Educat/>}></Route>
+                  <Route path="/Graduation/Inturnship" element={<Inturnship/>}></Route>
+           </Route>
+           
            
            </Routes>
       </BrowserRouter>

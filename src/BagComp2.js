@@ -3,12 +3,12 @@ import React from 'react'
 function BagComp2() {
   return (
     <div>
-             <div className='Bagcop2-cont'>
-              <div className='Bagcomp2-box'>
-                   <div className='comp2date'>
+             <div className='Bagcop1-cont'>
+              <div className='Bagcomp1-box'>
+                   <div className='comp1date'>
                         <p>SEP,2021 - FEB,2022</p>
                    </div>
-                   <div className='comp2pera'>
+                   <div className='comp1pera'>
                     <h1>TORC INFOTECH</h1>
                     <h2>Software Developer</h2>
                     <ul>

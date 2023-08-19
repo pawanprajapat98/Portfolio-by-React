@@ -1,6 +1,7 @@
 import React from 'react'
 // import SideNavbar from './SideNavbar'
 // import phonto/anyname from './path' 
+import { Link } from 'react-router-dom'
 function Home() {
   return (
   <>
@@ -15,8 +16,8 @@ function Home() {
           <div className='Detail'>
                 <h1>Pawan Prajapat</h1>
                 <p className='web'>Frontend Developer</p>
-                <button type="">RESUME</button>
-                <button type="">HIRE ME</button>
+                <a className='Resume' href='./resume.pdf'>RESUME</a>
+                <Link className='Hire' type="" to='/Contect'>HIRE ME</Link>
           </div>
       </div>
     </div> 

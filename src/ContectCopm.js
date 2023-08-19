@@ -2,7 +2,7 @@ import React from 'react'
 
 function ContectCopm() {
   return (
-    <div>
+    
         <div className='form'>
             <form>
                 <input className='Input-copy-1' placeholder='Full Name' type=''></input>
@@ -17,7 +17,7 @@ function ContectCopm() {
                 </div>
             </form>
         </div>
-    </div>
+    
   )
 }
 

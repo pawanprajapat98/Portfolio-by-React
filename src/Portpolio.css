@@ -8,48 +8,56 @@
 .Header {
     background-color: black;
     position: fixed;
-    height: 100%;
+    top: 0;
+    height:100vh;
     width: 100px;
     text-align: center;
     display: flex;
     justify-content: start;
     align-items: center;
+    z-index:9;
 }
-
 .Header ul li {
     list-style: none;
+    padding:2rem 1rem;
 }
-
 .Header ul li a {
     color: rgb(255, 253, 253);
     display: inline-block;
-    padding: 1.5rem;
+   
     font-size: 25px;
 }
+.Header ul li a i{
+    font-size:25px;
+}
 
-.main-box .container .pic img {
-    width: 320px;
+.container .pic img {
+    width: 300px;
     height:400px;
-    margin-top:10%;
-    margin-left:180px;
+  
     box-shadow: -11px 13px white;
-
-
+}
+.home{
+    position: relative;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 100px;
-    left: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:100px;
+ 
+
+
+  left:245px;
 }
 
 .Detail {
+    width: 560px;
     font-size: 30px;
     text-align: center;
-    margin-top: 60px;
+    margin-top:30px;
     margin-left:50px;
    
 }
@@ -91,12 +99,9 @@
 }
 
 .main-box {
-    width: 480px;
+    width: 400px;
     height: 100vh;
     background-color: black;
-    display: flex;
-    /* justify-content:55; */
-    align-items: center;
 }
 
 
@@ -295,7 +300,7 @@
     justify-content:center;
     flex-wrap: wrap;
     align-items:start;
-    margin-left:100px;
+    margin-left:70px;
     margin-top:50px;
     
 }
@@ -401,6 +406,167 @@ textarea{
     font-size:20px; 
     width:100%;
 }
+/* Home section mediya q............................................  */
+@media all and (max-width:1024px){
+  .main-box{
+     width:300px;
+  }
+  .container{
+    position: absolute;
+   
+    left:180px;
+  }
+  .container .pic img {
+    width:250px;
+    height:300px;
+  
+}
+/* .Detail h1,.Detail p {
+    border-left: 5px solid;
+
+} */
+
+.Detail h1,p {
+    margin-left:20px;
+    padding: 10px 10px 10px 0;
+    font-size:30px;
+    font-weight:500;
+}
+.Resume,.Hire {
+  
+    padding: 10px 10px;
+    width:140px;
+    height:40px;
+    font-size: 18px;
+   
+}
+.Detail{
+    width: 450px;
+}
+
+}
+@media all and (max-width:768px){
+    .main-box{
+        width:250px;
+     }
+     .container{
+        position: absolute;
+        left:155px;
+      }
+      .container .pic img {
+        width:200px;
+        height:250px;
+      
+    }
+    .Detail h1,p {
+        margin-left:20px;
+        padding: 10px 10px 10px 10px;
+        font-size:25px;
+        font-weight:700;
+    }
+    .Detail{
+        width:350px;
+        margin-left:30px;
+    }
+    .Resume,.Hire {
+  
+        padding: 10px 10px;
+        width:130px;
+        height:40px;
+        font-size: 18px;
+       
+    }
+}
+@media all and (max-width: 423px){
+    .Header{
+        width:80px;
+    }
+    .main-box{
+         width:0;
+    }
+    .container{
+        flex-direction:column;
+        justify-content: center;
+        position: absolute;
+        left:55px;
+      }
+      .container .pic img {
+        width:160px;
+        height:210px;
+      
+    }
+    .Detail{
+        width:350px;
+        margin-left:0;
+    }
+    .Resume,.Hire {
+  
+        padding:5px 10px;
+        width:100px;
+        height:30px;
+        font-size:16px;
+       
+    }
+    .Detail h1,p {
+       
+        margin-left:0;
+        padding: 10px 0px 10px 0px;
+        font-size:25px;
+        font-weight:700;
+    }
+}
+/* @media all and (max-width:424px){
+   
+    .main-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:white;
+        width:100%;
+        height:100vh;
+       
+    }
+    .container{
+        flex-direction: column;
+        margin-left:70px;
+       
+
+    }
+    .main-box .container .pic img {
+        width: 200px;
+        height: 250px;
+       
+        margin-left: 0px;
+        box-shadow: -11px 13px white;
+    }
+    .Detail h1,.Detail p{
+        margin-left: 40px;
+        font-size: 25px;
+        padding: 10px 10px 10px 0px;
+        color: rgb(32, 29, 27);
+        font-weight: 400;
+    }
+    .Detail {
+      
+        width:300px;
+        text-align: center;
+        margin-top: 30px;
+         margin-left:0px;
+    } 
+} */
+
+/* @media all and (max-width:375px){
+    .main-box .container .pic img {
+         width: 150px!important;
+         height: 200px!important;
+         margin-top: 60%;
+       
+    }
+    .container{
+        
+        margin-left:55px!important;
+    }
+} */
 /* portfolio section mediya q............................................  */
 @media all and (max-width:1024px){
     .port-box{
@@ -418,47 +584,69 @@ textarea{
         margin:10px 30px;
     }
     .portfolio-heading h1{
-        font-size: 30px;
-        margin-left: 80px !important;
+        font-size:30px;
+        margin-left:80px!important;
        
-        font-weight: 500;
+        font-weight:500;
     }
     .port-cop-box{
         
         margin-top:30px;
         
+        
     }
 }
     @media all and (max-width:425px){
+        
         .port-box{
         
-            margin:10px 40px 10px 40px;
+            /* margin:10px 40px 10px 70px; */
         }
         
         .portfolio-heading h1{
-            font-size: 30px;
-            margin-left:100px !important;
+            font-size:30px;
+            /* margin-left:120px; */
             font-weight: 500;
         }
         .port-cop-box{
-            
-            margin-top:30px;
-            
+             margin-top:30px;
+            /* margin-left:70px !important; */
         }
 }
 @media all and (max-width:375px){
     .portfolio-heading h1{
        
-        margin-left:120px;
+        margin-left:100px!important;
        
     }
+    .port-cop-box{
+        margin-top:30px;
+       margin-left:40px!important;
+   }
+   .port-box{
+        
+      
+}
 }
 @media all and (max-width:320px){
     .portfolio-heading h1{
        
-        margin-left:90px;
+        margin-left:70px!important;
+        
        
     }
+    .port-cop-box{
+        margin-top:30px;
+        margin-left:70px!important;
+     }
+   .port-box{
+    width:200px;
+    height:150px;
+    border-radius:10px;
+    margin:20px 0;
+    
+
+}
 }
 
 

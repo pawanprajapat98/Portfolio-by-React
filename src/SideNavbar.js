@@ -2,13 +2,11 @@ import React from 'react'
 import {  Link } from 'react-router-dom'
 
 function SideNavbar() {
-  function haldalcolor(){
-
-  }
+ 
   return (
     <>
       <div className='Header' >
-        <ul onClick={haldalcolor}>
+        <ul>
             <li> <Link to="/" ><i className="fa-solid fa-house"></i></Link></li>
             <li> <Link to="/about" ><i className="fa-regular fa-user"></i></Link></li>
             <li> <Link to="/Code" ><i className="fa-regular fa-file-code"></i></Link></li>

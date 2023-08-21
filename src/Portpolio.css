@@ -162,9 +162,9 @@
     height:250px;
     
 }
-.Skill-cont h1{
+.Skill-cont .Skill-box h2{
     font-size:27px;
-    margin-right:40px;
+    margin:0 40px;
    
 }
 /* Bag section .............................................  */
@@ -477,9 +477,9 @@ textarea{
        
     }
 }
-@media all and (max-width: 423px){
+@media all and (max-width:424px){
     .Header{
-        width:80px;
+        width:60px;
     }
     .main-box{
          width:0;
@@ -488,7 +488,8 @@ textarea{
         flex-direction:column;
         justify-content: center;
         position: absolute;
-        left:55px;
+        left:65px;
+        top:95px;
       }
       .container .pic img {
         width:160px;
@@ -515,58 +516,339 @@ textarea{
         font-weight:700;
     }
 }
-/* @media all and (max-width:424px){
-   
-    .main-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color:white;
-        width:100%;
-        height:100vh;
-       
+@media all and (max-width:375px){
+    .Header{
+        width:60px;
     }
-    .container{
-        flex-direction: column;
-        margin-left:70px;
-       
-
-    }
-    .main-box .container .pic img {
-        width: 200px;
-        height: 250px;
-       
-        margin-left: 0px;
-        box-shadow: -11px 13px white;
-    }
-    .Detail h1,.Detail p{
-        margin-left: 40px;
-        font-size: 25px;
-        padding: 10px 10px 10px 0px;
-        color: rgb(32, 29, 27);
-        font-weight: 400;
-    }
-    .Detail {
+    .container .pic img {
+        width:150px;
+        height:200px;
       
-        width:300px;
-        text-align: center;
-        margin-top: 30px;
-         margin-left:0px;
-    } 
-} */
-
-/* @media all and (max-width:375px){
-    .main-box .container .pic img {
-         width: 150px!important;
-         height: 200px!important;
-         margin-top: 60%;
-       
     }
     .container{
-        
-        margin-left:55px!important;
+        flex-direction:column;
+        justify-content: center;
+        position: absolute;
+        left:46px;
+        top:100px;
+      }
+}
+@media all and (max-width:320px){
+    .Header{
+        width:60px;
     }
-} */
+    .container .pic img {
+        width:140px;
+        height:190px;
+      
+    }
+    .container{
+        flex-direction:column;
+        justify-content: center;
+        position: absolute;
+        left:20px;
+        top:100px;
+      }
+      .Hire .Resume{
+        padding: 5px 5px;
+        width: 85px;
+        height: 30px;
+        font-size: 15px;
+      }
+      .Detail h1,p {
+       font-size:18px
+    }
+}
+/* About section mq............................................................  */
+@media all and (max-width:1024px){
+    .Header{
+        width:80px;
+    }
+
+}
+@media all and (max-width:768px){
+    .Header{
+        width:60px;
+    }
+   
+    .About-box h1{
+        font-size:30px;
+        font-weight:700;
+    }
+    .About-box p{
+        font-size:16px;
+    }
+
+
+    
+}
+@media all and (max-width:425px){
+    .About-box{
+        margin-left:70px;
+        border-radius:0;
+    }
+    .About-box p{
+       margin:0;
+       font-size:14px;
+    }
+
+   
+}
+@media all and (max-width:375px){
+    .About-box{
+      
+        border-radius:0;
+    }
+    .About-box p{
+       margin:0;
+       font-size:13px;
+    }
+    .About-box h1{
+        font-size:27px;
+    }
+
+   
+}
+@media all and (max-width:320px){
+    .About-box{
+       
+       
+        border-radius:0;
+    }
+    .About-box p{
+       margin:0;
+       font-size:12px;
+    }
+    .About-box h1{
+        font-size:25px;
+    }
+
+   
+}
+/* bag section mq ...........................................................  */
+@media all and (max-width:1024px){
+    .Bagcomp1-box .comp1date p {
+        width: 320px !important;
+    }
+    .Bag-heading h1 {
+       
+        margin-left: 70px;
+      
+    }
+}
+@media all and (max-width:768px){
+    .Bagcomp1-box {
+      
+        margin: 0 0 0 30px;
+       
+    }
+    .Bag-heading h1 {
+       
+        margin-left:60px;
+       
+    }
+    .Bagcomp1-box .comp1date p {
+        width: 280px !important;
+    }
+}
+@media all and (max-width:425px){
+    .Bag-heading h1 {
+        font-size:35px;
+        margin-left: 240px;
+    }
+    .Bagcomp1-box {
+     
+        margin: 0 0 0 110px;
+       
+    }
+}
+@media all and (max-width:375px){
+    .Bagcomp1-box {
+     
+        margin: 0 0 0 130px;
+       
+    }
+    .Bag-heading h1 {
+       
+        margin-left: 210px;
+    }
+}
+/* graduation section .......................................................  */
+@media all and (max-width:1024px){
+    .Educat-box .Detail-box h1, h2 {
+        font-size: 28px;
+      
+    }
+    .Educat-box .Date-box p {
+        font-size: 25px;
+        width: 350px;
+        text-align: center;
+    }
+}
+@media all and (max-width:768px){
+    .ul-list ul {
+        margin-left: 60px;
+      
+    }
+    .Educat-box .Detail-box h1, h2 {
+        font-size: 25px;
+       
+    }
+    .Educat-box .Date-box p {
+        font-size: 22px;
+      
+    }
+    .Educat-box {
+      
+        margin: 0px 0 0 20px;
+      
+    }
+}
+@media all and (max-width:425px){
+    .Educat-box .Date-box p {
+        font-size:14px;
+        width: 160px;
+        text-align: center;
+    }
+    .ul-list ul li a {
+      
+        padding: 14px 10px;
+        color: black;
+        font-size: 15px;
+    }
+    .Educat-box .Detail-box h1, h2 {
+        font-size:18px;
+    }
+    .Educat-box {
+        margin: 0px 0 0 124px;
+    }
+}
+@media all and (max-width:375px){
+    .Educat-box .Date-box p {
+        font-size: 16px;
+        width: 188px;
+        text-align: center;
+    }
+    .Educat-box {
+      
+        margin: 0px 0 0 240px;
+       
+    }
+}
+@media all and (max-width:320px){
+    .Educat-box .Date-box p {
+        font-size: 14px;
+        width: 160px;
+        text-align: center;
+    }
+    .Educat-box {
+      
+        margin: 0px 0 0 255px;
+       
+    }
+    .ul-list ul {
+        margin-left: 50px;
+        
+    }
+    .ul-list ul li a {
+      padding: 14px 8px;
+      font-size: 14px;
+    }
+}
+
+/* Code section mediya q............................................  */
+@media all and (max-width:1024px){
+    .Skill-cont .Skill-box img{
+   
+        width:300px;
+        height:200px;
+        
+    }
+    .Skill-cont .Skill-box{
+        margin-top:30px;
+    }
+    .Code-cont .Code-heading h1{
+        font-size: 40px;
+        margin-left: 0;
+    }
+    .Skill-cont .Skill-box h2{
+        font-weight: 700;
+        font-size: 23px;
+        margin: 0px 50px;
+    }
+  
+    
+    
+}
+@media all and (max-width:768px){
+    .Skill-cont .Skill-box{
+        margin-left:100px;
+    }
+}
+@media all and (max-width:425px){
+    .Skill-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Skill-cont .Skill-box {
+        width: 300px;
+        margin-left:96px;
+        height: 250px;
+    }
+    .Skill-cont .Skill-box img{
+   
+        width:300px;
+        height:200px;
+        
+    }
+    .Code-cont .Code-heading h1{
+      
+            font-size:35px;
+            /* font-weight: bolder; */
+            margin-left:80px;
+            text-align: center;
+        
+    }
+    .Skill-cont .Skill-box h2{
+        font-size: 20px;
+        font-weight:700;
+        margin:0 45px;
+    }
+}
+@media all and (max-width:375px){
+    .Skill-cont .Skill-box{
+        width: 280px;
+        margin-left:66px;
+        height:238px;
+    }
+    .Skill-cont .Skill-box h2{
+        font-size: 20px;
+        font-weight:700;
+        margin:0 49px;
+    }
+    .Skill-cont .Skill-box {
+        width: 275px;
+        margin-left: 85px;
+        height: 235px;
+    }
+   .Code-cont .Code-heading h1{
+        font-size: 35px;
+        font-weight: bolder;
+        margin-left:70px;
+        text-align: center;
+    }
+    
+}
+@media all and (max-width:320px){
+    .Code-cont .Code-heading h1 {
+        font-size: 32px;
+        font-weight: bolder;
+        margin-left: 123px;
+        text-align: center;
+    }
+}
 /* portfolio section mediya q............................................  */
 @media all and (max-width:1024px){
     .port-box{
@@ -578,7 +860,7 @@ textarea{
     
     }
 }
-@media all and (max-width:705px){
+@media all and (max-width:768px){
     .port-box{
         
         margin:10px 30px;
@@ -692,6 +974,7 @@ textarea{
         width:500px;
         padding:7px;
         font-size:20px;
+        margin-top:50px;
     }
     #Input-msg{
         width:70%;
@@ -728,6 +1011,7 @@ textarea{
         height:100%;
         padding:10px;
         margin-right:30px;
+        margin-top:50px;
        
     }
     #Input-msg{
